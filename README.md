@@ -1,30 +1,30 @@
 ## Overview of the Analysis
 
-Created a pretty accurate machine learning model used to predict healthy or high-risk loans.
+Looking to predict healthy vs high-risk loans by looking at previously
+collected instance's loan data (loan amount, interest rate, derogatory marks) & borrower information (income, debt to income ratio, number of accounts, & total debt). Each categorized as healthy (0) or high risk (1).
+Using a Logistic Regression Model, the collected measures are then used to predict whether future loans in similar instances will be high-risk or healthy.
 
-First step was separating insance information including collected measures on
-loan data (loan amount, interest rate, derogatory marks) &
-borrower information (income, debt to income ratio, number of accounts, & total debt)
-from whether it was categorized as healthy or high risk.
-Using a Logistic Regression Model, the collected measures are used to predict whether
-future loans in similar instances will be high-risk or healthy loans.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+It's important to note that the data was imbalanced. Out of 77,536 instances; 75,036 were healthy and 2,500 were high-risk
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
- that had a balanced accuracy of 95% with an overall accuracy rating of 99%.
+* Model Accuracy: 
+  * The model scored 99% accuracy and 95% balanced accuracy
+* Model Precision:
+  * The model was least precise when predicting high risk loans at 85%
+  * Healthy loans scored a shocking 100%. This could be due to the imbalance.
+* Model Recall:
+  * Healthy loan recall was 99%
+  * High-risk loan recall was 91% 
 
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+Overall, this machine learning model performed really well. 
 
-If you do not recommend any of the models, please justify your reasoning.
+The number of predicted healthy but categorized as high-risk loans is **nearly half** the number of actual healthy loans predicted to be high-risk.
+
+The number of missed high-risk loans was **a tenth** of the predicted high-risk loans that were actually healthy loans.
+
+I certainly recommend this model as a tool with the understanding that the high-risk data isn't necessarily as represented as it needs to be to be able to accurately categorize them as so. Meaning, even if you get an instance that could be predicted as high-risk, it's more likely to not be a high-risk. Because of this, it's important to take in more factors if receiving a high-risk score. 
