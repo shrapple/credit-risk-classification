@@ -27,4 +27,4 @@ The number of predicted healthy but categorized as high-risk loans is **nearly h
 
 The number of missed high-risk loans was **a tenth** of the predicted high-risk loans that were actually healthy loans.
 
-I certainly recommend this model as a tool with the understanding that the high-risk data isn't necessarily as represented as it needs to be to be able to accurately categorize them as so. Meaning, even if you get an instance that could be predicted as high-risk, it's important to take in more factors if receiving a high-risk result. 
+I recommend this model as a tool with the understanding that the high-risk data isn't necessarily as represented as it needs to be to be able to accurately categorize them as so.
